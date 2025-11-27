@@ -1,12 +1,13 @@
 const products = [
-  {id:1,name:'Batom Líquido Matte',price:49.90,cat:'lips',img:'images/lips1.png',desc:'Longa duração, sem transferência.'},
-  {id:2,name:'Paleta de Sombras 12 cores',price:89.90,cat:'eyes',img:'images/eyes1.png',desc:'Cores pigmentadas para todo look.'},
-  {id:3,name:'Base Líquida HD',price:119.90,cat:'face',img:'images/foundation.png',desc:'Acabamento natural, cobertura média.'},
-  {id:4,name:'Máscara de Cílios Volumax',price:39.90,cat:'eyes',img:'images/mascara.png',desc:'Volume e definição instantânea.'},
-  {id:5,name:'Pó Compacto Translúcido',price:34.90,cat:'face',img:'images/powder.png',desc:'Acabamento matte sem pesar.'},
-  {id:6,name:'Lápis de Sobrancelha',price:29.90,cat:'eyes',img:'images/brow.png',desc:'Fácil aplicação e natural.'},
-  {id:7,name:'Kit Pincéis 5 peças',price:79.90,cat:'tools',img:'images/brushes.png',desc:'Cerdas macias, ótimo custo-benefício.'},
-  {id:8,name:'Iluminador Cremoso',price:54.90,cat:'face',img:'images/highlight.png',desc:'Glow saudável e fácil de espalhar.'}
+{id:1,name:'Batom Líquido Matte',price:49.90,cat:'lips',img:'https://th.bing.com/th/id/OIP.KP5RfqfBO65cuWqCuif2EAHaHa?w=218&h=218&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',desc:'Longa duração, sem transferência.'},
+  {id:2,name:'Paleta de Sombras 12 cores',price:89.90,cat:'eyes',img:'https://th.bing.com/th/id/OIP.-JyvFp2tfeAWNDd_Hh6howHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',desc:'Cores pigmentadas para todo look.'},
+   {id:3,name:'Base Líquida HD',price:119.90,cat:'face',img:'https://tse2.mm.bing.net/th/id/OIP._Wd2nC3j_wJfwl884v6ZeQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',desc:'Acabamento natural, cobertura média.'},
+   {id:4,name:'Máscara de Cílios Volumax',price:39.90,cat:'eyes',img:'https://th.bing.com/th/id/OIP.hL9AqgFqVGLiXsyRfc-1jQHaHa?w=219&h=219&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',desc:'Volume e definição instantânea.'},
+  {id:5,name:'Pó Compacto Translúcido',price:34.90,cat:'face',img:'https://tse1.mm.bing.net/th/id/OIP.067Ic74Ikh5A4h6pzJg77wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',desc:'Acabamento matte sem pesar.'},
+  {id:6,name:'Lápis de Sobrancelha',price:29.90,cat:'eyes',img:'https://coprobel.vteximg.com.br/arquivos/ids/272106-1000-1000/lapis-para-sobrancelha-2-em-1-02-medium-melu-ruby-rose-1006207-25391.png?v=638342724263270000',desc:'Fácil aplicação e natural.'},
+  {id:7,name:'Kit Pincéis 5 peças',price:79.90,cat:'tools',img:'https://http2.mlstatic.com/D_NQ_NP_661865-MLU69364676681_052023-O.webp',desc:'Cerdas macias, ótimo custo-benefício.'},
+  {id:8,name:'Iluminador Cremoso',price:54.90,cat:'face',img:'https://www.pigmentta.com/wp-content/uploads/2024/05/Iluminador-Bloom-Highlight-Bloomshell.png',desc:'Glow saudável e fácil de espalhar.'}
+
 ];
 
 let state = {query:'',cat:'all',sort:'default',cart:{}};
@@ -102,3 +103,4 @@ document.getElementById('checkoutBtn').addEventListener('click',()=>{
 });
 
 render();
+
