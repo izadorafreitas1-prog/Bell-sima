@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bellíssima — Loja de Maquiagem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <h1>Bellíssima — Loja de Maquiagem</h1>
+          <div class="tagline">Beleza consciente. Produtos para todas.</div>
+        </div>
+      </div>
+
+      <div class="search">
+        <input id="search" placeholder="Pesquisar produtos, ex: batom, primer..." />
+      </div>
+
+      <div class="controls">
+        <select id="sort">
+          <option value="default">Ordenar</option>
+          <option value="price-asc">Preço: menor</option>
+          <option value="price-desc">Preço: maior</option>
+          <option value="name">Nome</option>
+        </select>
+        <div class="cart-toggle">
+          <button id="openCart">Carrinho</button>
+          <div id="cartCount" class="cart-count" style="display:none">0</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="filters">
+      <button class="filter-btn" data-cat="all">Todos</button>
+      <button class="filter-btn" data-cat="lips">Lábios</button>
+      <button class="filter-btn" data-cat="eyes">Olhos</button>
+      <button class="filter-btn" data-cat="face">Rosto</button>
+      <button class="filter-btn" data-cat="tools">Acessórios</button>
+    </div>
+
+    <main>
+      <section class="grid" id="productGrid"></section>
+    </main>
+
+    <footer>© Bellíssima — Projeto demo · Não é uma loja real</footer>
+  </div>
+
+  <div id="cartDrawer" class="cart-drawer" style="display:none">
+    <div class="cart-header">
+      <strong>Seu carrinho</strong>
+      <button id="closeCart" class="secondary">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total-row">
+      <div class="muted">Total</div>
+      <div id="cartTotal" class="cart-total">R$0,00</div>
+    </div>
+    <div class="cart-actions">
+      <button id="checkoutBtn">Finalizar compra</button>
+      <button id="clearCart" class="secondary">Limpar</button>
+    </div>
+  </div>
+
+  <template id="productTpl">
+    <div class="card">
+      <img class="thumb" alt="produto" />
+      <div class="card-body">
+        <div class="title"></div>
+        <div class="meta"><div class="tag"></div><div class="price"></div></div>
+        <p class="desc"></p>
+      </div>
+      <div class="actions">
+        <button class="add">Adicionar</button>
+        <button class="secondary view">Ver</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
